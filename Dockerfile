@@ -22,8 +22,8 @@ COPY	index.html /var/www/html/index.html
 RUN 	yum install -y httpd && yum clean all -y && \
     	sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf && \
         useradd webuser && \
-#	echo webserver:redhat | chpasswd && \
-    	echo webuser:${password} | chpasswd && \
+	echo webserver:redhat | chpasswd && \
+#    	echo webuser:${password} | chpasswd && \
     	chmod -R a+rwx /run/httpd /etc/httpd/logs
 
 # Working directory 
