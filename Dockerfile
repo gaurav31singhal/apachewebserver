@@ -1,6 +1,6 @@
 ## DEMO WEBSERVER
 # Base operating system image based on centos 7 
-FROM	rhel7
+FROM	registry.access.redhat.com/rhel7
 
 # Metadata information 
 LABEL	maintainer=dockergiri@hotmail.com
