@@ -12,7 +12,7 @@ FROM	registry.access.redhat.com/rhel7
 # ARG password
 
 # Copying Index file
-#COPY	index.html /var/www/html/index.html
+COPY	index.html /var/www/html/index.html
 
 
 # Demo to show ARG usage 
